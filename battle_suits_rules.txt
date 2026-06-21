@@ -1,0 +1,79 @@
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+
+BATTLE SUITS (v1.00)
+
+2-player card battle game played using one standard 52 card deck
+
+### BASIC RULES ###############################################################
+
+- The objective is to have more cards in your Score Pile than your opponent by
+  the time the Deck is empty.
+- Both players begin with 12 cards, and populate their back row with 3 Units
+  before play begins. One Unit is made of two cards. A game of RPS determines
+  who goes first.
+- All cards deployed to the field must always be faceup.
+- The ace and face cards are valued as such: A = 1, J = 11, Q = 12, K = 13
+
+### GAME LAYOUT ###############################################################
+
+####...   P1 Hand       # P1 Score Pile
+#A #2 #3  P1 Back Row
+56 78 9J  P1 Front Row
+#  #  #                 # Deck  # Discard Pile
+56 78 9J  P2 Front Row
+#A #2 #3  P2 Back Row
+####...   P2 Hand       # P2 Score Pile
+
+### SUITS BEHAVIOR ############################################################
+
+HEART: Damage resistance; a HEART is immune to capture from a SPADE of lower
+  value. For SPADE and HEART of equal value, the attacking Unit must sacrifice
+  itself to capture this unit.
+
+SPADE: Attack power; a SPADE can capture any Unit unless it has a HEART of
+  greater value.
+
+DIAMOND: Purchase power; a DIAMOND can purchase a shop card of equal or lesser
+  value. This discards the DIAMOND card from the Unit and replaces it with the
+  purchased card.
+
+CLUB: Luck card; a CLUB of greater or equal value to a shop card may draw a card
+  from the Deck when it is in the front row. This discards the CLUB card from
+  the Unit and replaces it with the drawn card.
+
+### ACTIONS ###################################################################
+
+DEPLOY: When the player has two or more cards in their Hand, they may form a
+  Unit and place it in a vacant spot in the back row.
+
+MOVE: Move a Unit into an adjacent space. If that space is occupied, swap the
+  position of those Units.
+
+REFACTOR: When two adjacent Units are in the back row, swap one card between
+  them. Or, when one Unit is in the back row and at least one card is in
+  the player's Hand, swap one card between the player's Hand and that Unit.
+
+ATTACK: When one Unit is in the front row and has a SPADE, capture the opponent
+  Unit in the front row directly across from it and send both cards to the
+  attacker's Score Pile.
+    SPADE vs no HEART  The attacking Unit remains.
+    SPADE = HEART      Both cards in the attacking Unit are discarded.
+    SPADE < HEART      Attacking is not allowed.
+    SPADE > HEART      The attacking Unit remains.
+    DOUBLES: If both cards in the attacking Unit are necessary to defeat the
+      target Unit (for instance, for [5 SPADE + 4 SPADE > 6 HEART], BOTH cards
+	  in the attacking Unit are discarded.)
+
+PURCHASE: When a Unit is in the front row and has a DIAMOND of greater or equal
+  value to the card in the Shop Row, the DIAMOND is discarded and replaced with
+  the card that was purchased. The vacancy in the Shop Row is immediately
+  replaced with a card drawn from the Deck.
+    DOUBLES PURCHASES: If both cards in the purchasing Unit are necessary to
+      purchase the target card (for instance, [5 DIAMOND 4 DIAMOND > 6 SPADE],
+	  BOTH cards in the purchasing Unit are discarded.)
+	  
+CLUB PURCHASE: Same as Purchase, except the player draws from the Deck instead
+  of the Shop.
+
+DRAW: When a player has 5 or fewer cards across both rows and their Hand, they
+  may draw a card and add it to their Hand. If the Deck is empty, the game ends.
