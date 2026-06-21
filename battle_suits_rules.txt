@@ -1,6 +1,6 @@
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 
-BATTLE SUITS (v1.04)
+BATTLE SUITS (v1.05)
 
 2-player card battle game played using one standard 52 card deck
 
@@ -9,7 +9,7 @@ BATTLE SUITS (v1.04)
 - The objective is to have more cards in your Score Pile than your opponent by
   the time the Deck is empty. When the game ends, both players add 1/3 (rounded
   down) of the cards in their Hand to their score pile.
-- Both players begin with 12 cards, and populate their back row with 4 Units
+- Both players begin with 14 cards, and populate their back row with 4 Units
   before play begins. One Unit is made of two cards. A game of RPS determines
   who goes first.
 - Both cards of a front row Unit must always be faceup; back row Units must
@@ -35,7 +35,8 @@ HEART: Damage resistance; a HEART is immune to capture from a SPADE of lower
   itself to capture this unit.
 
 SPADE: Attack power; a SPADE can capture any Unit unless it has a HEART of
-  greater value.
+  greater value. Capturing any card with a HEART forces the SPADE to be
+  discarded, and for its partner card to return to the player's Hand.
 
 DIAMOND: Purchase power; a DIAMOND can purchase a shop card of equal or lesser
   value. This discards the DIAMOND card from the Unit and replaces it with the
@@ -77,10 +78,12 @@ ATTACK: When one Unit is in the front row and has a SPADE, capture the opponent
 	  4 CLUB > 6 HEART], BOTH cards in the attacking Unit are discarded.)
 
 PURCHASE: When a Unit is in the front row and has a DIAMOND of greater or equal
-  value to the card in the Shop Row, the DIAMOND is discarded and replaced with
-  the card that was purchased. The vacancy in the Shop Row is immediately
-  replaced with a card drawn from the Deck.
-    DOUBLES PURCHASES: If both cards in the purchasing Unit are necessary to
+  value to the card in the Shop Row, the DIAMOND is spent and replaced with the
+  card that was purchased. The vacancy in the Shop Row is immediately replaced
+  with a card drawn from the Deck.
+    SINGLE CARD PURCHASES: If only one DIAMOND card is used for purchasing, the
+	  DIAMOND card used is sent to the purchasing player's Score Pile.
+    DOUBLE CARD PURCHASES: If both cards in the purchasing Unit are necessary to
       purchase the target card (for instance, [5 DIAMOND 4 DIAMOND > 6 SPADE] or
 	  [5 DIAMOND 4 CLUB > 6 SPADE], BOTH cards in the purchasing Unit are
 	  discarded.)
@@ -95,12 +98,19 @@ PURCHASE: When a Unit is in the front row and has a DIAMOND of greater or equal
 	  action is free; subsequent DIAMOND cards purchased on the same turn are
 	  charged against the value of the purchasing unit's DIAMOND value as
 	  normal. Cards purchased for free go into the player's hand.
+	JOKER PURCHASE: JOKER cards cost 10 DIAMOND to purchase.
 
-DRAW: When a player has 5 or fewer cards across both rows and their Hand, they
-  may draw a card and add it to their Hand. If the Deck is empty, the game ends.
+DRAW: When a player has 7 or fewer cards across both rows and their Hand, they
+  may draw a card and add it to their Hand.
   
 SACRIFICE: When a unit is in the front row, send both cards to the Discard pile
   and add the adjacent card in the Shop Row to the player's hand. If the
   sacrificing card is directly across from an enemy unit in the front row with a
   SPADE card, one card is sent to the Discard pile while the other is sent to
   the opponent's Score Pile.
+  
+PASS: A player may pass for one or both Actions on their turn.
+
+REFRESH: If there are no DIAMOND cards in the Shop, the player may put all 4
+  shop cards back into the Deck, shuffle it, and deal 4 new cards. This counts
+  as 2 Actions.
