@@ -1,6 +1,6 @@
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 
-BATTLE SUITS (v1.02)
+BATTLE SUITS (v1.03)
 
 2-player card battle game played using one standard 52 card deck
 
@@ -8,10 +8,13 @@ BATTLE SUITS (v1.02)
 
 - The objective is to have more cards in your Score Pile than your opponent by
   the time the Deck is empty.
-- Both players begin with 16 cards, and populate their back row with 4 Units
+- Both players begin with 12 cards, and populate their back row with 4 Units
   before play begins. One Unit is made of two cards. A game of RPS determines
   who goes first.
-- All cards deployed to the field must always be faceup.
+- Both cards of a front row Unit must always be faceup; back row Units must
+  always have one faceup card and one facedown card. During any Deploy,
+  Refactor, or Move action, the acting player must flip cards up or down to
+  reflect this, and can choose which card in a Unit to flip facedown.
 - The ace and face cards are valued as such: A = 1, J = 11, Q = 12, K = 13
 
 ### GAME LAYOUT ###############################################################
