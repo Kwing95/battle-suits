@@ -1,22 +1,14 @@
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 
-BATTLE SUITS (v1.05)
+BATTLE SUITS (v1.06)
 
-2-player card battle game played using one standard 52 card deck
+### PREMISE ###################################################################
 
-### BASIC RULES ###############################################################
-
-- The objective is to have more cards in your Score Pile than your opponent by
-  the time the Deck is empty. When the game ends, both players add 1/3 (rounded
-  down) of the cards in their Hand to their score pile.
-- Both players begin with 14 cards, and populate their back row with 4 Units
-  before play begins. One Unit is made of two cards. A game of RPS determines
-  who goes first.
-- Both cards of a front row Unit must always be faceup; back row Units must
-  always have one faceup card and one facedown card. During any Deploy,
-  Refactor, or Move action, the acting player must flip cards up or down to
-  reflect this, and can choose which card in a Unit to flip facedown.
-- The ace and face cards are valued as such: A = 1, J = 11, Q = 12, K = 13
+Battle Suits is a card battle game played using a standard 52 deck of cards.
+Players arrange card pairs into units, which are deployed and moved within a 4x5
+playing field to gather resources and capture enemy units. Captures and
+purchases add to the player's score pile, which is used to determine the winner
+at the end of the game.
 
 ### GAME LAYOUT ###############################################################
 
@@ -28,46 +20,62 @@ BATTLE SUITS (v1.05)
 2A 32 43 54  P2 Back Row
 ####...      P2 Hand       # P2 Score Pile
 
+### SETUP #####################################################################
+
+1 Shuffle the deck, then deal 14 cards to each player and deal 4 cards faceup in
+  the middle of the field to be shop cards.
+2 Both players populate their back row with 4 units. Before play begins, both
+  cards in the back row are laid facedown so that placement is not influenced by
+  any already-placed units. Once both players have filled their back rows, one
+  card from each unit is flipped faceup.
+3 The player that goes first is decided by a game of rock, paper, scissors.
+4 Players take two Actions per turn until the Deck is empty.
+5 Once the Deck is empty, for every 3 cards in a player's hand, 1 is added to
+  their score pile (rounded down.) After this, the player with the most cards in
+  their score pile is the winner.
+
 ### SUITS BEHAVIOR ############################################################
 
-HEART: Damage resistance; a HEART is immune to capture from a SPADE of lower
-  value. For SPADE and HEART of equal value, the attacking Unit must sacrifice
-  itself to capture this unit.
+HEART: Allows a Unit to resist damage from an attacking Unit. (See Attack)
 
-SPADE: Attack power; a SPADE can capture any Unit unless it has a HEART of
-  greater value. Capturing any card with a HEART forces the SPADE to be
-  discarded, and for its partner card to return to the player's Hand.
+SPADE: Allows a Unit to attack an enemy Unit. (See Attack)
 
-DIAMOND: Purchase power; a DIAMOND can purchase a shop card of equal or lesser
-  value. This discards the DIAMOND card from the Unit and replaces it with the
-  purchased card.
+DIAMOND: Allows the player to purchase cards from the Shop. (See Purchase)
 
-CLUB: Wild suit; its value is added to the power of its partner card.
-
-JOKER: Sniper; when in the front row, a JOKER may capture a Unit in the back row
-  of that column. This discards the JOKER and sends its partner card back to the
-  user's Hand. The JOKER must always be faceup, even in the back row. Playing
-  with JOKER cards is optional.
+CLUB: Adds its own value to card it's paired with. For instance, a Unit made of
+  5 CLUB and 5 SPADE behaves the same as 10 SPADE.
 
 DOUBLES: Two cards of the same suit combine their values; for instance,
   8 DIAMOND 9 DIAMOND behave as a single unit with 17 DIAMOND power. Two CLUB
-  cards have no special behavior and cannot take any special actions.
+  cards have no special behavior.
+
+JOKER: Allows a Unit to attack an enemy Unit in the back row. This discards the
+  JOKER and sends its partner card back to the user's Hand. JOKER cards must
+  always be faceup, even in the back row. Playing with JOKER cards is optional.
+  A CLUB has no effect when paired with a JOKER.
 
 ### ACTIONS ###################################################################
 
 DEPLOY: When the player has two or more cards in their Hand, they may form a
-  Unit and place it in a vacant spot in the back row.
+  Unit and place it in a vacant spot in the back row. [1]
 
 MOVE: Move a Unit into an adjacent space. If that space is occupied, swap the
-  position of those Units.
+  position of those Units. [1]
 
 REFACTOR: When two adjacent Units are in the back row, swap one card between
   them. Or, when one Unit is in the back row and at least one card is in
-  the player's Hand, swap one card between the player's Hand and that Unit.
+  the player's Hand, swap one card between the player's Hand and that Unit. [1]
+  
+  [1] VISIBILITY RULE: During any DEPLOY, MOVE, or REFACTOR Action, it must be
+    ensured that both cards of any Unit in the front row are placed faceup, and
+	Units in the back row must have one card faceup and one card facedown. The
+	player may choose which card to show faceup during any Action that affects a
+	card in the back row.
+	  JOKER VISIBILITY: A JOKER card in the back row must always be faceup.
 
 ATTACK: When one Unit is in the front row and has a SPADE, capture the opponent
   Unit in the front row directly across from it and send both cards to the
-  attacker's Score Pile.
+  attacker's Score Pile. [2]
     SPADE vs no HEART  The attacking Unit remains.
     SPADE = HEART      Both cards in the attacking Unit are discarded.
     SPADE < HEART      Attacking is not allowed.
@@ -80,7 +88,7 @@ ATTACK: When one Unit is in the front row and has a SPADE, capture the opponent
 PURCHASE: When a Unit is in the front row and has a DIAMOND of greater or equal
   value to the card in the Shop Row, the DIAMOND is spent and replaced with the
   card that was purchased. The vacancy in the Shop Row is immediately replaced
-  with a card drawn from the Deck.
+  with a card drawn from the Deck. [2]
     SINGLE CARD PURCHASES: If only one DIAMOND card is used for purchasing, the
 	  DIAMOND card used is sent to the purchasing player's Score Pile.
     DOUBLE CARD PURCHASES: If both cards in the purchasing Unit are necessary to
@@ -100,8 +108,11 @@ PURCHASE: When a Unit is in the front row and has a DIAMOND of greater or equal
 	  normal. Cards purchased for free go into the player's hand.
 	JOKER PURCHASE: JOKER cards cost 10 DIAMOND to purchase.
 
+  [2] ACES LOW RULE: For all card comparisons and arithmetic, ace and face
+	cards are valued as follows: A = 1, J = 11, Q = 12, K = 13
+
 DRAW: When a player has 7 or fewer cards across both rows and their Hand, they
-  may draw a card and add it to their Hand.
+  may draw two cards and add them to their Hand.
   
 SACRIFICE: When a unit is in the front row, send both cards to the Discard pile
   and add the adjacent card in the Shop Row to the player's hand. If the
