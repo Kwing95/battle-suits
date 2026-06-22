@@ -15,7 +15,7 @@ at the end of the game.
 ####...      P1 Hand       # P1 Score Pile
 2A 32 43 54  P1 Back Row
 56 78 9J QK  P1 Front Row
-#  #  #  #                 # Deck  # Discard Pile
+#  #  #  #   Shop Row      # Deck  # Discard Pile
 56 78 9J QK  P2 Front Row
 2A 32 43 54  P2 Back Row
 ####...      P2 Hand       # P2 Score Pile
