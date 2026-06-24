@@ -26,6 +26,15 @@ SHOP: An area containing cards for purchase.
 
 HANDS: The area where players keep newly acquired cards.
 
+DECK: Cards purchased from the Shop are replaced by drawing from the Deck.
+  Players with few cards may also draw directly from the Deck.
+  
+DISCARD: Certain actions may result in cards being sent to this pile. These
+  cards are permanently removed from the game.
+  
+Score Pile: Captured units go into the attacking player's score pile. The number
+  of cards in the score pile is used to determine the winner.
+
 Visually, the playfield will look like this during play:
 
 ####...      P1 Hand       # P1 Score Pile
