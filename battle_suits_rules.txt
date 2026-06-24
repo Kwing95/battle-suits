@@ -12,6 +12,22 @@ at the end of the game.
 
 ### GAME LAYOUT ###############################################################
 
+The playfield is divided into 5 rows, 4 piles, and 2 hands.
+
+BACK ROW: A defensive area where new units are deployed and can be modified by
+  refactoring. One card in a back row unit remains facedown and thus hidden to
+  the opposing player.
+  
+FRONT ROW: An action-heavy area where units can purchase cards from the shop and
+  capture other units in the front row. Both cards in a front row unit remain
+  faceup and visible to the opposing player.
+
+SHOP: An area containing cards for purchase.
+
+HANDS: The area where players keep newly acquired cards.
+
+Visually, the playfield will look like this during play:
+
 ####...      P1 Hand       # P1 Score Pile
 2A 32 43 54  P1 Back Row
 56 78 9J QK  P1 Front Row
@@ -30,9 +46,10 @@ at the end of the game.
   card from each unit is flipped faceup.
 3 The player that goes first is decided by a game of rock, paper, scissors.
 4 Players take two Actions per turn until the Deck is empty.
-5 Once the Deck is empty, for every 3 cards in a player's hand, 1 is added to
-  their score pile (rounded down.) After this, the player with the most cards in
-  their score pile is the winner.
+5 Once the Deck is empty, each player counts all of the cards in their front and
+  back rows, as well as in their hand. 1/3 of their cards (rounded down) are
+  added to their score pile. After this, the player with the most cards in their
+  score pile is the winner.
 
 ### SUITS BEHAVIOR ############################################################
 
@@ -66,12 +83,12 @@ REFACTOR: When two adjacent Units are in the back row, swap one card between
   them. Or, when one Unit is in the back row and at least one card is in
   the player's Hand, swap one card between the player's Hand and that Unit. [1]
   
-  [1] VISIBILITY RULE: During any DEPLOY, MOVE, or REFACTOR Action, it must be
-    ensured that both cards of any Unit in the front row are placed faceup, and
-	Units in the back row must have one card faceup and one card facedown. The
-	player may choose which card to show faceup during any Action that affects a
-	card in the back row.
-	  JOKER VISIBILITY: A JOKER card in the back row must always be faceup.
+[1] VISIBILITY RULE: During any DEPLOY, MOVE, or REFACTOR Action, it must be
+  ensured that both cards of any Unit in the front row are placed faceup, and
+  Units in the back row must have one card faceup and one card facedown. The
+  player may choose which card to show faceup during any Action that affects a
+  card in the back row.
+    JOKER VISIBILITY: A JOKER card in the back row must always be faceup.
 
 ATTACK: When one Unit is in the front row and has a SPADE, capture the opponent
   Unit in the front row directly across from it and send both cards to the
@@ -108,8 +125,8 @@ PURCHASE: When a Unit is in the front row and has a DIAMOND of greater or equal
 	  normal. Cards purchased for free go into the player's hand.
 	JOKER PURCHASE: JOKER cards cost 10 DIAMOND to purchase.
 
-  [2] ACES LOW RULE: For all card comparisons and arithmetic, ace and face
-	cards are valued as follows: A = 1, J = 11, Q = 12, K = 13
+[2] ACES LOW RULE: For all card comparisons and arithmetic, ace and face cards
+  are valued as follows: A = 1, J = 11, Q = 12, K = 13
 
 DRAW: When a player has 7 or fewer cards across both rows and their Hand, they
   may draw two cards and add them to their Hand.
