@@ -1,15 +1,15 @@
 IDEA: Should capturing with a Joker discard just the Joker, or both cards?
 
-IDEA: Capturing with a Spade currently sends the partner card back to the
-attacker's hand. This makes it easy for an attacking player to "hit and run"
-leaving no opportunity for counterattack; what if capturing with one Spade left
-the partner card as a "1 card unit" which was placed sideways? This unit could
-act and move as a single card unit until captured or converted back into a 2
-card unit via Refactor. Counterattacking players could capture that one
-individual card.
-
-IDEA: What if instead of 1/3 of the player's Hand going to their Score Pile,
-it's 1/N of that player's total cards (deployed units and hand)? (1/4?)
+IDEA: Should the bonus cards that go into a player's score pile be changed?
+(Currently 1/3 rounded down, considering 1/4 rounded down)
 
 IDEA: What if diamond cards stay after buying stuff? Maybe using both diamonds
 discards one or both but only using one card doesn't spend it?
+
+IDEA: For diamonds persisting after purchasing cards, the Consecutive Purchases
+rule has been removed. Should it be added back in? This also affects the DIAMOND
+PURCHASES rule.
+
+IDEA: Sacrifice and Refresh are bandaids to deal with late-game economy
+stagnation. The new persistent diamond rule may make these unnecessary, but
+keeping them for now as they don't actively make the game worse.

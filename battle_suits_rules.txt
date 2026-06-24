@@ -67,7 +67,7 @@ DOUBLES: Two cards of the same suit combine their values; for instance,
   cards have no special behavior.
 
 JOKER: Allows a Unit to attack an enemy Unit in the back row. This discards the
-  JOKER and sends its partner card back to the user's Hand. JOKER cards must
+  JOKER and converts its partner card into a single card unit. JOKER cards must
   always be faceup, even in the back row. Playing with JOKER cards is optional.
   A CLUB has no effect when paired with a JOKER.
   
@@ -117,26 +117,11 @@ ATTACK: When one Unit is in the front row and has a SPADE, capture the opponent
 	  4 CLUB > 6 HEART], BOTH cards in the attacking Unit are discarded.)
 
 PURCHASE: When a Unit is in the front row and has a DIAMOND of greater or equal
-  value to the card in the Shop Row, the DIAMOND is spent and replaced with the
-  card that was purchased. The vacancy in the Shop Row is immediately replaced
-  with a card drawn from the Deck.
-    SINGLE CARD PURCHASES: If only one DIAMOND card is used for purchasing, the
-	  DIAMOND card used is sent to the purchasing player's Score Pile.
-    DOUBLE CARD PURCHASES: If both cards in the purchasing Unit are necessary to
-      purchase the target card (for instance, [5 DIAMOND 4 DIAMOND > 6 SPADE] or
-	  [5 DIAMOND 4 CLUB > 6 SPADE], BOTH cards in the purchasing Unit are
-	  discarded.)
-	CONSECUTIVE PURCHASES: So long as the purchasing card(s) are greater than or
-	  equal to the combined value of the cards being purchased, the player may
-	  continue purchasing the cards that are drawn to repopulate the Shop. For
-	  instance, if 10 DIAMOND purchases 2 SPADE and the replacement cards are
-	  3 HEART, 4 CLUB, 4 HEART, the player may purchase 2 SPADE, 3 HEART, and
-	  4 CLUB because their combined value (9) is less than the value of
-	  10 DIAMOND, but the remainder (1) is not enough to purchase 4 HEART.
+  value to the card in the Shop Row, the player may add the shop card to their
+  hand. The vacancy in the Shop Row is immediately replaced with a card drawn
+  from the Deck.
     DIAMOND PURCHASES: Any DIAMOND card in the Shop Row at the beginning of an
-	  action is free; subsequent DIAMOND cards purchased on the same turn are
-	  charged against the value of the purchasing unit's DIAMOND value as
-	  normal. Cards purchased for free go into the player's hand.
+	  action is free.
 	JOKER PURCHASE: JOKER cards cost 10 DIAMOND to purchase.
 
 DRAW: When a player has 7 or fewer cards across both rows and their Hand, they
