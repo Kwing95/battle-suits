@@ -51,7 +51,7 @@ Visually, the playfield will look like this during play:
   added to their score pile. After this, the player with the most cards in their
   score pile is the winner.
 
-### SUITS BEHAVIOR ############################################################
+### SUIT BEHAVIOR #############################################################
 
 HEART: Allows a Unit to resist damage from an attacking Unit. (See Attack)
 
@@ -70,34 +70,38 @@ JOKER: Allows a Unit to attack an enemy Unit in the back row. This discards the
   JOKER and sends its partner card back to the user's Hand. JOKER cards must
   always be faceup, even in the back row. Playing with JOKER cards is optional.
   A CLUB has no effect when paired with a JOKER.
+  
+### RULES #####################################################################
+
+VISIBILITY RULE: During any DEPLOY, MOVE, or REFACTOR Action, both cards of any
+  Unit in the front row are placed faceup, and Units in the back row must have
+  one card faceup and one card facedown. The player may choose which card to
+  show faceup during any Action that affects a card in the back row.
+    JOKER VISIBILITY: A JOKER card in the back row must always be faceup.
+	
+ACES LOW RULE: ACES LOW RULE: For all card comparisons and arithmetic, ace and
+  face cards are valued as follows: A = 1, J = 11, Q = 12, K = 13
 
 ### ACTIONS ###################################################################
 
 DEPLOY: When the player has two or more cards in their Hand, they may form a
-  Unit and place it in a vacant spot in the back row. [1]
+  Unit and place it in a vacant spot in the back row.
 
 MOVE: Move a Unit into an adjacent space. If that space is occupied, swap the
-  position of those Units. [1]
+  position of those Units.
 
 REFACTOR: When two adjacent Units are in the back row, swap one card between
   them. Or, when one Unit is in the back row and at least one card is in
-  the player's Hand, swap one card between the player's Hand and that Unit. [1]
-  
-[1] VISIBILITY RULE: During any DEPLOY, MOVE, or REFACTOR Action, it must be
-  ensured that both cards of any Unit in the front row are placed faceup, and
-  Units in the back row must have one card faceup and one card facedown. The
-  player may choose which card to show faceup during any Action that affects a
-  card in the back row.
-    JOKER VISIBILITY: A JOKER card in the back row must always be faceup.
+  the player's Hand, swap one card between the player's Hand and that Unit.
 
 ATTACK: When one Unit is in the front row and has a SPADE, capture the opponent
   Unit in the front row directly across from it and send both cards to the
-  attacker's Score Pile. [2]
+  attacker's Score Pile.
     SPADE vs no HEART  The attacking Unit remains.
     SPADE = HEART      Both cards in the attacking Unit are discarded.
     SPADE < HEART      Attacking is not allowed.
     SPADE > HEART      The SPADE card is discarded and its partner card returns
-	                   to the player's hand.
+	  to the attacker's hand.
     DOUBLES: If both cards in the attacking Unit are necessary to defeat the
       target Unit (for instance, for [5 SPADE + 4 SPADE > 6 HEART] or [5 SPADE +
 	  4 CLUB > 6 HEART], BOTH cards in the attacking Unit are discarded.)
@@ -105,7 +109,7 @@ ATTACK: When one Unit is in the front row and has a SPADE, capture the opponent
 PURCHASE: When a Unit is in the front row and has a DIAMOND of greater or equal
   value to the card in the Shop Row, the DIAMOND is spent and replaced with the
   card that was purchased. The vacancy in the Shop Row is immediately replaced
-  with a card drawn from the Deck. [2]
+  with a card drawn from the Deck.
     SINGLE CARD PURCHASES: If only one DIAMOND card is used for purchasing, the
 	  DIAMOND card used is sent to the purchasing player's Score Pile.
     DOUBLE CARD PURCHASES: If both cards in the purchasing Unit are necessary to
@@ -124,9 +128,6 @@ PURCHASE: When a Unit is in the front row and has a DIAMOND of greater or equal
 	  charged against the value of the purchasing unit's DIAMOND value as
 	  normal. Cards purchased for free go into the player's hand.
 	JOKER PURCHASE: JOKER cards cost 10 DIAMOND to purchase.
-
-[2] ACES LOW RULE: For all card comparisons and arithmetic, ace and face cards
-  are valued as follows: A = 1, J = 11, Q = 12, K = 13
 
 DRAW: When a player has 7 or fewer cards across both rows and their Hand, they
   may draw two cards and add them to their Hand.
