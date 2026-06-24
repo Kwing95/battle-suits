@@ -81,6 +81,12 @@ VISIBILITY RULE: During any DEPLOY, MOVE, or REFACTOR Action, both cards of any
 	
 ACES LOW RULE: ACES LOW RULE: For all card comparisons and arithmetic, ace and
   face cards are valued as follows: A = 1, J = 11, Q = 12, K = 13
+  
+SINGLE CARD UNITS: When one Spade card is used to capture an enemy Unit, the
+  remaining card becomes a single card unit. Single card units are placed
+  sideways on the field and remain faceup even when in the back row. Single
+  cards behave normally (HEART resists damage, SPADE attacks, DIAMOND can make
+  purchases.) 
 
 ### ACTIONS ###################################################################
 
@@ -91,8 +97,12 @@ MOVE: Move a Unit into an adjacent space. If that space is occupied, swap the
   position of those Units.
 
 REFACTOR: When two adjacent Units are in the back row, swap one card between
-  them. Or, when one Unit is in the back row and at least one card is in
-  the player's Hand, swap one card between the player's Hand and that Unit.
+  them. Or, when the Unit is in the back row and at least one card is in the
+  player's Hand, swap one card between the player's Hand and that Unit.
+    SINGLE CARD UNITS: A single card unit cannot be swapped with a card in an
+      adjacent unit or the player's hand. However, the player may Refactor by
+	  adding one card from their hand to convert a single card unit into a
+	  standard two card unit.
 
 ATTACK: When one Unit is in the front row and has a SPADE, capture the opponent
   Unit in the front row directly across from it and send both cards to the
@@ -100,8 +110,8 @@ ATTACK: When one Unit is in the front row and has a SPADE, capture the opponent
     SPADE vs no HEART  The attacking Unit remains.
     SPADE = HEART      Both cards in the attacking Unit are discarded.
     SPADE < HEART      Attacking is not allowed.
-    SPADE > HEART      The SPADE card is discarded and its partner card returns
-	  to the attacker's hand.
+    SPADE > HEART      The SPADE card is discarded and its partner card becomes
+	                   a single card unit.
     DOUBLES: If both cards in the attacking Unit are necessary to defeat the
       target Unit (for instance, for [5 SPADE + 4 SPADE > 6 HEART] or [5 SPADE +
 	  4 CLUB > 6 HEART], BOTH cards in the attacking Unit are discarded.)
