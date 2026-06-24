@@ -10,6 +10,10 @@ IDEA: For diamonds persisting after purchasing cards, the Consecutive Purchases
 rule has been removed. Should it be added back in? This also affects the DIAMOND
 PURCHASES rule.
 
+IDEA: Potentially discard one card if two cards are needed for a single
+purchase. (Should it always be a diamond that's discarded, and not a club?
+Should it always be the higher card or lower card that's discarded?)
+
 IDEA: Sacrifice and Refresh are bandaids to deal with late-game economy
 stagnation. The new persistent diamond rule may make these unnecessary, but
 keeping them for now as they don't actively make the game worse.
