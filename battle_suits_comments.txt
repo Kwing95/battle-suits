@@ -1,19 +1,16 @@
-IDEA: Should capturing with a Joker discard just the Joker, or both cards?
-
 IDEA: Should the bonus cards that go into a player's score pile be changed?
 (Currently 1/3 rounded down, considering 1/4 rounded down)
-
-IDEA: What if diamond cards stay after buying stuff? Maybe using both diamonds
-discards one or both but only using one card doesn't spend it?
-
-IDEA: For diamonds persisting after purchasing cards, the Consecutive Purchases
-rule has been removed. Should it be added back in? This also affects the DIAMOND
-PURCHASES rule.
-
-IDEA: Potentially discard one card if two cards are needed for a single
-purchase. (Should it always be a diamond that's discarded, and not a club?
-Should it always be the higher card or lower card that's discarded?)
 
 IDEA: Sacrifice and Refresh are bandaids to deal with late-game economy
 stagnation. The new persistent diamond rule may make these unnecessary, but
 keeping them for now as they don't actively make the game worse.
+
+IDEA: Should Refresh cost one Action instead of two? As one action it's easy to
+use it offensively to keep a player from getting a card. As two actions it gives
+advantage to the other player. Could some other option (opponent's DIAMOND
+capable of purchasing a shop item? Both players agree on a shop refresh?) limit
+when it can be done?
+
+IDEA: What should happen if [4 SPADE 7 CLUB] captures 6 HEART? Does it count as
+both cards being needed (SPADE requires CLUB to capture) or does it count as one
+card being needed (7 CLUB > 6 HEART)?
