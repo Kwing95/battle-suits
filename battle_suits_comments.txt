@@ -10,6 +10,10 @@ use it offensively to keep a player from getting a card. As two actions it gives
 advantage to the other player. Could some other option (opponent's DIAMOND
 capable of purchasing a shop item? Both players agree on a shop refresh?) limit
 when it can be done?
+- What if Refresh allows you to buy up to one card using a
+DIAMOND in your hand? This could end badly with small decks left; players could
+Refresh/buy knowing what will be available - on the other hand, not much time to
+take advantage of it if the game ends soon.
 
 IDEA: What should happen if [4 SPADE 7 CLUB] captures 6 HEART? Does it count as
 both cards being needed (SPADE requires CLUB to capture) or does it count as one

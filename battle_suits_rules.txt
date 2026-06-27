@@ -77,8 +77,9 @@ DOUBLES: Two cards of the same suit combine their values; for instance,
 
 JOKER: Allows a Unit to attack an enemy Unit in the back row. This discards the
   JOKER and converts its partner card into a single card unit. JOKER cards must
-  always be faceup, even in the back row. Playing with JOKER cards is optional.
-  A CLUB has no effect when paired with a JOKER.
+  always be faceup, even in the back row. A CLUB has no effect when paired with
+  a JOKER. Playing with JOKER cards is optional.
+  
   
 ### RULES #####################################################################
 
@@ -137,13 +138,14 @@ DRAW: When a player has 7 or fewer cards across both rows and their Hand, they
   may draw two cards and add them to their Hand.
   
 SACRIFICE: When a unit is in the front row, send both cards to the Discard pile
-  and add the adjacent card in the Shop Row to the player's hand. If the
-  sacrificing card is directly across from an enemy unit in the front row with a
-  SPADE card, one card is sent to the Discard pile while the other is sent to
-  the opponent's Score Pile.
+  and add the adjacent card in the Shop Row to the player's hand.
+    BLOCKED SACRIFICES: If the card being sacrificed is directly across from an
+	  enemy unit in the front row with a SPADE card, one card is sent to the
+	  opponent's Score Pile, while the other is discarded as normal.
+    SINGLE CARD UNITS: Single card units cannot be sacrificed.
   
 PASS: A player may pass for one or both Actions on their turn.
 
 REFRESH: If there are no DIAMOND cards in the Shop, the player may put all 4
-  shop cards back into the Deck, shuffle it, and deal 4 new cards. This counts
-  as 2 Actions.
+  shop cards back into the Deck, shuffle it, and deal 4 new shop cards. This
+  counts as 2 Actions.
