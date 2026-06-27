@@ -1,6 +1,6 @@
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 
-BATTLE SUITS (v1.06)
+BATTLE SUITS (v1.07)
 
 ### PREMISE ###################################################################
 
@@ -124,7 +124,7 @@ ATTACK: When one Unit is in the front row and has a SPADE, capture the opponent
 	                   a single card unit.
     DOUBLES: If both cards in the attacking Unit are necessary to defeat the
       target Unit (for instance, for [5 SPADE + 4 SPADE > 6 HEART] or [5 SPADE +
-	  4 CLUB > 6 HEART], BOTH cards in the attacking Unit are discarded.)
+	  7 CLUB > 6 HEART], BOTH cards in the attacking Unit are discarded.)
 
 PURCHASE: When a Unit is in the front row and has a DIAMOND of greater or equal
   value to the card in the Shop Row, the player may add the shop card to their
